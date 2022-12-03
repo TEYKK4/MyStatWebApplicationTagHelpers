@@ -1,0 +1,16 @@
+﻿@using MyStatWebApplication.HTMLHelpers
+@model IEnumerable<Homework>
+
+@{
+    ViewData["Title"] = "Homeworks";
+}
+
+@section Scripts
+{
+	<script src="~/js/home-index.js"></script>
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    @Html.RenderHomeworks(Model)
+</div>

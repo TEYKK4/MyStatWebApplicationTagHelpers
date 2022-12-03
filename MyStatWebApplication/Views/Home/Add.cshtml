@@ -1,0 +1,12 @@
+﻿@model Homework
+
+@{
+    ViewData["Title"] = "Add Homework";
+}
+<h1>@ViewData["Title"]</h1>
+
+@using (Html.BeginForm("AddHomework", "Home", FormMethod.Post))
+{
+    @Html.TextBoxFor(h => h.Description)
+    <input type="submit" value="Add" />
+}
